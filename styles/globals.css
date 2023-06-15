@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.responsive {
+  display: flex;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .responsive {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+  }
+}
