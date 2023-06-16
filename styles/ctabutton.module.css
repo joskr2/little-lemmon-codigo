@@ -1,0 +1,9 @@
+.responsiveButton {
+  witdh: fit-content;
+}
+
+@media (min-width: 768px) {
+  .responsiveButton  {
+    width: 50%;
+  }
+}

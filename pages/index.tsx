@@ -2,6 +2,9 @@ import React, { FC } from 'react'
 import Header from '../components/Header';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
+import CTAButton from '@/components/CtaButton';
+import CtaSection from '@/components/CtaSection';
+import InfoCardsSection from '@/components/InfoCardsSection';
 
 const IzqSection = () => {
   return (
@@ -41,19 +44,13 @@ const Title = () => {
   )
 }
 
-
-
-const CTAButton = () => {
-  return (
-    <Link className='bg-green-700 text-white  text-2xl font-bold px-4 py-2 rounded-full' href={'/'}>Reservar</Link>
-  )
-}
-
 const Home = () => {
   return (
     <>
       <Header title={Title()} izqSection={IzqSection()} derSection={DerSection()} />
-      <Hero titulo='Meal' subtitulo='Delicious' img={'/banner.jpeg'} ctaButton={CTAButton()} />
+      <Hero titulo='Meal' subtitulo='Delicious' img={'/banner.jpeg'} ctaButton={<CTAButton text='Reservar' />} />
+      <CtaSection />
+      <InfoCardsSection />
     </>
   )
 }

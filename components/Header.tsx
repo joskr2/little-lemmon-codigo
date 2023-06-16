@@ -8,8 +8,8 @@ interface Props {
 
 const Header: FC<Props> = ({ title, derSection, izqSection }) => {
   return (
-    <header className='sticky top-0'>
-      <nav className='flex justify-between p-3 mb-2 w-full'>
+    <header className='sticky top-0 z-50'>
+      <nav className='flex justify-between p-3 mb-2 w-full bg-white'>
         <div>
           {
             izqSection
